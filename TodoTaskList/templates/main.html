@@ -1,0 +1,38 @@
+{% load static %}
+<html>
+    <head>
+        <title>Todo App</title>
+        <link type="text/css" rel="stylesheet" href="{% static 'TodoTaskList/boot-css/bootstrap.css' %}"/>
+        <link type="text/css" rel="stylesheet" href="{% static 'TodoTaskList/css/style.css' %}"/>
+    </head>
+    <body>
+        <div class="container">
+            
+            <div class="glass">
+            
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class='display-5 appTitle'>ToDo App</h1>
+                        <span class="underline"></span>
+                    </div>                
+                </div>
+                
+                <div class="content" id="mainContent">
+                    <div class="mainVLoderBox">
+                        <div class="loader loaderShow"></div>       
+                    </div>
+                    
+                </div>
+                
+                
+            </div>
+
+            {% csrf_token %}
+        </div>
+        
+
+        <script type="text/javascript" src="{% static 'TodoTaskList/js/jquery-1.11.3.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'TodoTaskList/boot-js/bootstrap.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'TodoTaskList/js/site.js' %}"></script>        
+    </body>
+</html>

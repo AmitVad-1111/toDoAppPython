@@ -1,0 +1,272 @@
+body{
+    background:url("../images/bg.jpg");
+    margin:0 auto;
+    width:1200px;
+    background-attachment: fixed;
+}
+
+
+.glass{    
+    background: linear-gradient(to left bottom,rgba(255, 255, 255,0.6),rgb(255,255,255,0.6));
+    width: inherit;
+    height: 650px;
+    backdrop-filter: blur(2px);
+    border: 1px solid #c3bdbd63;
+    text-align: center;
+    margin: 53px auto;
+}
+
+
+.container_bk{
+    background: #ffffff;
+    padding: 4px 5px;
+    margin-top: 50px;
+    height: 500px;
+    width: 100%;    
+}
+
+.container_bk::before{
+    position:relative;
+    width:500px;
+    height:500px;
+    filter: blur(3px);
+}
+
+.appTitle{
+    color: #483c3c;
+}
+
+.underline{
+ display: block;   
+ border-bottom: 1px solid;
+ width:700px;
+ margin: 0 auto;
+}
+.emptyText{
+    margin-top: 83px;
+}
+
+.listTitleBox{
+    display: flex;
+    /* border: 1px solid; */
+    width: 600px;
+    padding: 10px 16px;
+    margin: 0 auto;
+}
+
+.itemLbl{
+    padding: 7px;
+    font-weight: bold;
+}
+.itemTxt{
+    padding: 1px 26px;
+    width: 400px;
+    height:38px;
+    font-size:20px;
+}
+.itemTxt input[type="text"]{
+    width: 100%;
+    height: inherit;
+    padding-left: 4px;
+}
+
+
+/* .itemNxt{
+
+} */
+
+.listBoxMainBox{
+    margin-top: 86px;
+}
+
+.mainView{
+    margin-top: 25px;
+}
+.listN{
+    margin-top: 10px;
+}
+.listTitl{
+    border-bottom: 1px solid;
+    width: 461px;
+    margin: 0 auto;
+    padding: 2px 8px;
+    font-size: 18px;
+    text-align: left;
+}
+.listTitl a{
+    text-decoration: none;
+    color: #1d1c1b;
+}
+
+.listTitl:hover{
+    background: #e2d2d282;
+    cursor: pointer;
+
+}
+.setBtn{
+    margin-bottom: 15px;
+}
+
+.listBox{
+    display: block;
+    border: 1px solid;
+    width: 100%;
+    margin-top: 23px;
+    height: 28px;
+    background: #000;
+}
+
+.listBox .left{
+    color: #fff;
+    font-weight: bold;
+    padding-left: 10px;
+    float: left;
+    text-align: left;
+}
+.listBox .right{
+    color: #fff;
+    float: right;
+    padding-right: 15px;
+    font-weight: bold;
+}
+.listBox .right:hover{
+    cursor: pointer;
+}
+.listMainBox{
+    width: 40%;
+    margin: 25px auto;
+}
+.listItem input[type="text"]{
+    width: 100%;
+}
+.listItem .item{
+    width: 100%;
+    text-align: left;
+    padding: 5px 12px;
+    background: #fff;
+    border-bottom: 1px dashed;
+}
+input[type="checkbox"]{
+    width: 17px;
+    height: 17px;
+    cursor:pointer;
+}
+.item span{
+    padding-left: 6px;
+    position: relative;
+    top: -5px;    
+    font-size: 16px !important;
+}
+
+.item:hover{
+    background:#eee;
+    cursor:pointer;
+}
+.iPending{
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+}
+.iComplete{
+    color: #ccc;
+    text-decoration: line-through;
+    font-size: 13px !important;
+}
+
+.removeTask{    
+    float: right;
+    padding: 5px 5px;
+    color: #fff;
+}
+.removeTask:hover{
+    color: #000;
+}
+
+#addNewTask{
+    text-decoration: none;
+    font-size: 14px;    
+    border: 1px solid;
+    padding: 2px 8px;
+    font-weight: bold;
+    color: #564341;
+}
+
+#addNewTask:hover{
+    color: #947c7a;
+}
+
+.prorityBox{
+    visibility: hidden;    
+    border: 1px solid;
+    width: fit-content;
+    position: relative;
+    top: -32px;
+    float: right;
+    left: 154px;
+    background: #fff;
+}
+.prorityBox span{
+    padding: 3px 6px;
+    display: inline-flex;
+}
+.prorityBox span:hover{
+    cursor: pointer;
+    background-color:#eee;
+}
+.boxclose{
+    padding: 3px 13px !important;
+}
+.boxclose:hover{    
+    background-color:rgb(238, 34, 34)  !important;
+}
+.showListBox{
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+}
+/*Loder*/
+.loader {
+    border: 3px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 3px solid #3498db;
+    width: 30px;
+    height: 30px;
+    -webkit-animation: spin 1s linear infinite; /* Safari */
+    animation: spin 1s linear infinite;
+  }
+  .mainVLoderBox{
+    display: block;
+    width: 100px;
+    margin: 107px auto;
+  }
+  .loderPostion,.loderPostion1{    
+    position: relative;    
+  }
+
+  .loderPostion{
+    top: -36px;
+    left: 147px;
+  }
+
+  .loderPostion1{
+    top: -49px;
+    left: 204px;
+  }
+  .loaderShow{
+    visibility: visible;
+  }
+  .loaderHide{
+    visibility: hidden;
+  }
+
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  

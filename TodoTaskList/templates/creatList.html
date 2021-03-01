@@ -1,0 +1,16 @@
+<div class="listBoxMainBox">
+    <div class="showListBox">
+        <a href="#" id="showlist" class='btn btn-warning'>All List</a>
+        <div class="loader loderPostion loaderHide"></div>
+    </div>
+    
+    <h1 class="display-6">Create new</h1>
+    <form action="getL" id="target" method="POST" onsubmit="return stopSubmit()">
+        {%csrf_token%}        
+        <div class="listTitleBox">
+            <div class='itemLbl'>{{form.ListTitle.label}}</div>
+            <div class='itemTxt'>{{form.ListTitle}}</div>
+            <div class='itemNxt'><button type="submit" id="#nextC" name="nextC" class="btn btn-primary">Next</button></div>
+        </div>
+    </form>
+</div>

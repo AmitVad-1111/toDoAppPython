@@ -1,0 +1,26 @@
+<div class="listMainBox">
+    <div class="showListBox">
+        <a href="#" id="showlist" class='btn btn-warning'>All List</a>
+        <div class="loader loderPostion loaderHide"></div>
+    </div>
+
+    <div class="listBox">
+        <div class="left">{{llist.listName}}</div>
+        <div class="right" id="rmvlist">X</div>        
+    </div>
+    <form autocomplete="false">
+    <div class="listItem">
+        <!-- <input type="text" name="taskname" id="task_name"/>
+        <input type="hidden" name="priority" value="0"/>
+        <div class="prorityBox">
+            <span>normal</span>
+            <span>high</span>
+            <span class="boxclose">X</span>
+        </div> -->
+    </div>    
+    {%csrf_token%}    
+    </form>
+    <div style="text-align: left;">
+        <a href="#" id="addNewTask">+ add task</a>
+    </div>    
+</div>
